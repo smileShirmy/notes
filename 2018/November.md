@@ -201,3 +201,17 @@ Math.max.apply(null, [3, 1, 2])     // 3
 Math.max(1, 2, 3, 4, 5)             // 5
 Math.max(...[4, 2, 3, 1])           // 4
 ```
+
+### Object.create
+
+```javascript
+var anotherObject = {
+    a:2
+}
+
+// 创建一个关联到 anotherObject 的对象
+var myObject = Object.create( anotherObject )
+myObject.a   // 2
+```
+
+### git reflog
