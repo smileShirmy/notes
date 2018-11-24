@@ -215,3 +215,15 @@ myObject.a   // 2
 ```
 
 ### git reflog
+
+### Object.create(null) 和 {}
+
+Object.create(null)没有继承任何方法，原型链没有上一层
+
+```javascript
+Object.create({}).toString      // function toString() { [native code] }
+Object.create(null).toString    // undefined
+
+Object.create(null)         // No properties
+{}                          // __proto__ 相当于 new Object()
+```
