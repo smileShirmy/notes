@@ -227,3 +227,13 @@ Object.create(null).toString    // undefined
 Object.create(null)         // No properties
 {}                          // __proto__ 相当于 new Object()
 ```
+
+### 组件注册
+
+- 通用的基础组件全局注册
+- 业务组件局部注册
+
+### getBoundingClientRect()
+
+- 返回一个 DOMRect 对象
+- 返回元素的大小及其相对于视口的位置。
