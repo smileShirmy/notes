@@ -25,3 +25,12 @@ Object.defineProperty(obj, 'key', {
     }
 })
 ```
+
+
+### 解构字符串
+
+```javascript
+[first, ...rest] = 'string'
+console.log(first)  // "s"
+cosnole.log(rest)   // ["t", "r", "i", "n", "g"]
+```
