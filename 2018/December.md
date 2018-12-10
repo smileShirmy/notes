@@ -34,3 +34,20 @@ Object.defineProperty(obj, 'key', {
 console.log(first)  // "s"
 cosnole.log(rest)   // ["t", "r", "i", "n", "g"]
 ```
+
+### 移动端扩展点击区域
+
+```javascript
+// 扩展点击区域
+@mixin extend-click() {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+```
