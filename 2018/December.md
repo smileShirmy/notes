@@ -51,3 +51,17 @@ cosnole.log(rest)   // ["t", "r", "i", "n", "g"]
   }
 }
 ```
+
+### scrollIntoView
+
+- element.scrollIntoView() 参数默认为 true
+- 参数为true时调用该函数，页面（或容器）发生滚动，使element的顶部与视图（容器）顶部对齐
+- 参数为false时，使element的底部与视图（容器）底部对齐
+
+```javascript
+document.getElementById("view").scrollIntoView();
+```
+
+#### examples
+
+如聊天窗口，当聊天气泡往下不断添加时，为了保证窗口在最下方，可使用scrollIntoView(false)
