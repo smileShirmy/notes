@@ -60,6 +60,9 @@ cosnole.log(rest)   // ["t", "r", "i", "n", "g"]
 
 ```javascript
 document.getElementById("view").scrollIntoView();
+
+behavior: "auto"  | "instant" | "smooth",
+block:    "start" | "end",
 ```
 
 #### examples
