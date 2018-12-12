@@ -68,3 +68,16 @@ block:    "start" | "end",
 #### examples
 
 如聊天窗口，当聊天气泡往下不断添加时，为了保证窗口在最下方，可使用scrollIntoView(false)
+
+### replace
+
+```javascript
+let str = 'abc'
+let value = str.replace(/a(.*?)c/g, '$1')	// b
+
+value = str.replace(/a(.*?)c/g, ($1, string, offset) => {
+	console.log($1)			// b
+	console.log(string)		// abc
+	console.log(offset)		// 0
+})
+```
