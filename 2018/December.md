@@ -81,3 +81,17 @@ value = str.replace(/a(.*?)c/g, ($1, string, offset) => {
 	console.log(offset)		// 0
 })
 ```
+
+### vue transition slide
+
+```css
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s
+}
+
+.slide-enter,
+.slide-leave-to {
+  transform: translate3d(100%, 0, 0)
+}
+```
