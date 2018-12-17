@@ -95,3 +95,5 @@ value = str.replace(/a(.*?)c/g, ($1, string, offset) => {
   transform: translate3d(100%, 0, 0)
 }
 ```
+
+### reutrn cache[key] = key
