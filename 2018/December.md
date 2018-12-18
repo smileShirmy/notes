@@ -97,3 +97,7 @@ value = str.replace(/a(.*?)c/g, ($1, string, offset) => {
 ```
 
 ### reutrn cache[key] = key
+
+### line-height: 1;
+
+避免默认行高影响
