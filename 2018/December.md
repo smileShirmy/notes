@@ -101,3 +101,20 @@ value = str.replace(/a(.*?)c/g, ($1, string, offset) => {
 ### line-height: 1;
 
 避免默认行高影响
+
+### 文字两边对齐
+
+```css
+div {
+	text-align: justify;
+	display: inline-block;
+	height: 40px;
+	width: 70px;
+	overflow: hidden;
+	&::after {
+		 content: "";
+		 display: inline-block;
+		 width: 100%;
+	}
+}
+```
