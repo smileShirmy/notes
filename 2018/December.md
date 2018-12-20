@@ -139,3 +139,11 @@ vw、vh 与 % 百分比的区别
 
 
 [链接](https://juejin.im/post/5c18d8e2f265da61407ed721)
+
+### CSS选择器排除最后两个
+
+```css
+&:not(:nth-last-child(-n + 2)) {
+	...
+  }
+```
