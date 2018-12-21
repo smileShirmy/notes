@@ -75,7 +75,14 @@ https://www.zhangxinxu.com/wordpress/2015/05/css3-transform-affect/
 
 ### HTML 语义化
 
-dl dt dd header main footer
+- dl
+- dt
+- dd
+- header 
+- main 
+- article
+- aside
+- footer
 
 ### mouseenter cleartimeout querySelector
 
