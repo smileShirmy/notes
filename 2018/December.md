@@ -156,3 +156,13 @@ vw、vh 与 % 百分比的区别
 const XX_XX = 1
 const XX_XXX = 2
 ``` 
+
+### 相对父元素底部对齐
+
+```css
+.parent {
+	.child {
+		vertical-align: bottom;	
+	}
+}
+```
