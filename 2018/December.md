@@ -167,4 +167,7 @@ const XX_XXX = 2
 }
 ```
 
-###
+### DOMContentLoaded和onload的区别
+
+- DOMContentLoaded 是当初始HTML文档完全被加载和解析（即所有的DOM完全解析）时触发的，无需等待图片等。
+- onload事件它要等页面所有元素，包括图片 以及脚本等全部加载完成才触发，因此它比DOMContentLoaded要更晚执行。
