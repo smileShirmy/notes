@@ -175,3 +175,7 @@ const XX_XXX = 2
 ### 事件代理
 
 获取父元素，通过target属性进行判断
+
+### hasOwnProperty
+
+判断是否有这个 key
