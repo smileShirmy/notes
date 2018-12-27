@@ -179,3 +179,29 @@ const XX_XXX = 2
 ### hasOwnProperty
 
 判断是否有这个 key
+
+### hover 显示图片
+
+要提前定位好要显示的部分，避免hover产生闪烁或其它情况。
+
+
+```css
+  .delete-app-icon {
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    &:hover {
+      .delete-app-icon {
+        position: absolute;
+        top: -11px;
+        right: -11px;
+        width: 22px;
+        height: 22px;
+        background: url('../images/myclass/delete-app.png') no-repeat;
+        cursor: pointer;
+      }
+    }
+```
