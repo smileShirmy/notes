@@ -43,3 +43,7 @@ var foo = 1
     console.log(foo)
 }()) // -> ƒ foo() { foo = 10 ; console.log(foo) }
 ```
+
+### 放弃解决冲突 git merge --about
+
+放弃此次的merge 
