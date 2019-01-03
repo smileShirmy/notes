@@ -33,3 +33,13 @@ let a = { b: 1 }
 - 对象的 ```__proto__``` 指向原型， ```__proto__``` 将对象和原型连接起来组成了原型链
 
 [](https://github.com/KieSun/Blog/issues/2)
+
+### 立即执行函数 上下文
+
+```javascript
+var foo = 1
+(function foo() {
+    foo = 10
+    console.log(foo)
+}()) // -> ƒ foo() { foo = 10 ; console.log(foo) }
+```
