@@ -19,4 +19,6 @@ function Foo() {}
 // 这个函数是 Function 的实例对象
 // function 就是一个语法糖
 // 内部调用了 new Function(...)
+let a = { b: 1 }
+// 这个字面量内部也是使用了 new Object()
 ```
