@@ -47,3 +47,7 @@ var foo = 1
 ### 放弃解决冲突 git merge --about
 
 放弃此次的merge 
+
+### git stash -u
+
+单单是git stash 不会把未跟踪的文件也保存起来，因此要加上`-u`，即 ```--include-untracked``` 的简写
