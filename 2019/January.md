@@ -44,7 +44,7 @@ var foo = 1
 }()) // -> ƒ foo() { foo = 10 ; console.log(foo) }
 ```
 
-### 放弃解决冲突 git merge --about
+### 放弃解决冲突 git merge --abort
 
 放弃此次的merge 
 
