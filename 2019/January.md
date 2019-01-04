@@ -51,3 +51,5 @@ var foo = 1
 ### git stash -u
 
 单单是git stash 不会把未跟踪的文件也保存起来，因此要加上`-u`，即 ```--include-untracked``` 的简写
+
+### 表单避免多次点击导致多次重复提交
