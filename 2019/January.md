@@ -53,3 +53,39 @@ var foo = 1
 单单是git stash 不会把未跟踪的文件也保存起来，因此要加上`-u`，即 ```--include-untracked``` 的简写
 
 ### 表单避免多次点击导致多次重复提交
+
+### checkbox 样式
+
+```html
+<label class="my_protocol">
+      <input class="input_agreement_protocol" type="checkbox" />
+      <span></span>
+</label>
+```
+
+```css
+/*隐藏掉我们模型的checkbox*/
+.my_protocol .input_agreement_protocol {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    display: none;
+}
+
+/*未选中时*/        
+.my_protocol .input_agreement_protocol+span {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    display: inline-block;
+    background: url(../../Images/TalentsRegister/icon_checkbox.png) no-repeat;
+    background-position-x: 0px;
+    background-position-y: -25px;
+    position: relative;
+    top: 3px;
+}
+/*选中checkbox时,修改背景图片的位置*/            
+.my_protocol .input_agreement_protocol:checked+span {
+    background-position: 0 0px
+}
+```
