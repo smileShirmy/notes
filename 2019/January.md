@@ -90,4 +90,28 @@ var foo = 1
 }
 ```
 
+```less
+  /*隐藏掉我们模型的checkbox*/
+  .resource-input-label{
+    .resource-input {
+      appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      display: none;
+    }
+    /*未选中时*/        
+    .resource-input + span {
+      width: 13px;
+      height: 13px;
+      background: url('../images/checkbox@uncheck.png') no-repeat;
+      display: inline-block;
+      position: relative;
+    }
+    /*选中checkbox时,修改背景图片的位置*/            
+    .resource-input:checked + span {
+      background: url('../images/checkbox@checked.png') no-repeat;
+    }
+  }
+```
+
 ###
