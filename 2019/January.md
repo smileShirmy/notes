@@ -116,4 +116,11 @@ var foo = 1
 
 ### git stash pop 和 git stash apply
 
-- git stash pop hi
+- git stash pop 会清空git stash 暂存
+- git stash apply 不会清空git stash 暂存
+
+### git 工作流
+
+- 功能分支前缀：feature/
+- 发布版本分支前缀：release/
+- 修复补丁分支前缀：hotfix/
