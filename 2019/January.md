@@ -114,4 +114,6 @@ var foo = 1
   }
 ```
 
-###
+### git stash pop 和 git stash apply
+
+- git stash pop hi
