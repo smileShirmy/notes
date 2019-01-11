@@ -124,3 +124,13 @@ var foo = 1
 - 功能分支前缀：feature/
 - 发布版本分支前缀：release/
 - 修复补丁分支前缀：hotfix/
+
+### 监听window.open的页面关闭
+
+```js
+win = window.open(index.html)
+
+interval(() => {
+	if (win.){ ... }
+}, 1000)
+```
