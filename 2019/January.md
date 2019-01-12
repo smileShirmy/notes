@@ -140,3 +140,7 @@ interval(() => {
 ### white-space: pre-line; 保留换行
 
 white-space 还有其他属性
+
+### 'Content-Type': 'application/x-www-form-urlencoded'
+
+### query是url参数 payload 是body参数
