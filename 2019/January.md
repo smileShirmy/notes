@@ -131,6 +131,8 @@ var foo = 1
 win = window.open(index.html)
 
 interval(() => {
-	if (win.){ ... }
+	if (win.closed === true){ ... }
 }, 1000)
 ```
+
+### 用雪碧图提前加载小图标，避免图标为空，优化体验
