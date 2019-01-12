@@ -136,3 +136,7 @@ interval(() => {
 ```
 
 ### 用雪碧图提前加载小图标，避免图标为空，优化体验
+
+### white-space: pre-line; 保留换行
+
+white-space 还有其他属性
