@@ -157,3 +157,31 @@ white-space 还有其他属性
     overflow: hidden;
 }
 ```
+
+### getBoundingClientRect()
+
+- Element.getBoundingClientRect()方法返回元素的大小及其相对于视口的位置。
+
+### offsetLeft 和 style.left
+
+- offsetLeft 获取的是相对于父对象的左边距
+- left 获取或设置相对于 具有定位属性(position定义为relative)的父对象 的左边距
+- 区别：
+1. style.left 返回的是字符串，如28px，offsetLeft返回的是数值28，如果需要对取得的值进行计算，用offsetLeft比较方便。
+2. style.left是读写的，offsetLeft是只读的，所以要改变div的位置，只能修改style.left。
+3. style.left的值需要事先定义，否则取到的值为空。而且必须要定义在html里，我做过试验，如果定义在
+css里，style.left的值仍然 为空，这就是我刚开始碰到的问题，总是取不到style.left的值。
+
+offsetLeft则仍然能够取到，无需事先定义div的位置。
+
+### Vue .native
+
+- .native - 监听组件根元素的原生事件。 
+- 区分自定义事件和
+- 如果不写 .native 修饰符，那 @click 就是自定义事件 click，而非原生事件 click
+
+如：
+
+```html
+<i-button @click.native="handleClick"></i-button>
+```
