@@ -145,4 +145,15 @@ white-space 还有其他属性
 
 ### query是url参数 payload 是body参数
 
-### 
+### clearfix
+
+```css
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+```
