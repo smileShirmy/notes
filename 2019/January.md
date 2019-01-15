@@ -196,3 +196,7 @@ offsetLeft则仍然能够取到，无需事先定义div的位置。
 - 父beforeUpdate->父updated
 - 销毁过程:
 - 父beforeDestroy->子beforeDestroy->子destroyed->父destroyed
+
+### div 和 table 的区别
+
+[链接](https://www.cnblogs.com/lovebear/archive/2012/04/18/2456081.html)
