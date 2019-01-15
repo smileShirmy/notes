@@ -200,3 +200,7 @@ offsetLeft则仍然能够取到，无需事先定义div的位置。
 ### div 和 table 的区别
 
 [链接](https://www.cnblogs.com/lovebear/archive/2012/04/18/2456081.html)
+
+### 雪碧图 和 base64 的优势
+
+有效减少http 请求
