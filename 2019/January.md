@@ -215,3 +215,18 @@ base64 使用场景
 
 - 做移动页面开发时，如果使用 vw、wh 设置字体大小（比如 5vw），在竖屏和横屏状态下显示的字体大小是不一样的。
 - 由于 vmin 和 vmax 是当前较小的 vw 和 vh 和当前较大的 vw 和 vh。这里就可以用到 vmin 和 vmax。使得文字大小在横竖屏下保持一致
+
+### vue2.x prop
+
+> props 中的 columns 和 data 的格式都是数组，这里要注意的是，如果 props 的类型是对象或数组，它的默认值必须从一个工厂函数获取。
+
+```js
+props: {
+	data: {
+   		type: Array,
+     	default() {
+        	return []
+		}
+   	}
+}
+```
