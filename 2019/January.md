@@ -246,3 +246,26 @@ props: {
 ```
 
 让计算交给浏览器做，避免过多的计算，提高可维护性，只需要调整外层的宽度即可
+
+### flex-grow flex-shrink flex-basis align-self
+
+- flex-grow: 放大比例，默认为`0`。如果所有item都为1，则等分剩余空间，如果某个为2，其它为1，那么这个的空间会比其它单个多一倍。
+- flex-shrink: 缩小比例，默认为`1`，空间不足将缩小。如果某个为0，那么其它缩小，这个不缩小。
+- flex-basis: 项目占据的主轴空间，默认为`auto`。
+- flex: 上面三个的简写，默认为`0 1 auto`，快捷值`auto(1 1 auto)`和`none(0 0 auto)`
+
+```css
+.item {
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}
+```
+
+- align-self: 允许单个项目有与其它项目不一样的对齐方式。可覆盖align-item。默认为auto，继承align-items，没有父元素则等同于skretch
+
+```css
+.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
+
+[flex语法](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
