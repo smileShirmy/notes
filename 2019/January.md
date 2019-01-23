@@ -269,3 +269,19 @@ props: {
 ```
 
 [flex语法](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
+### max-height 实现展开收起
+
+```css
+.element {
+	max-height: 0;
+	overflow: hidden;
+	transtion: max-height .25s;
+}
+
+.element .active {
+	max-height: 666px;
+}
+```
+
+如果要展开的元素高度比max-height设置的小得多，会有延迟效果，
