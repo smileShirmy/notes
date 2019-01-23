@@ -231,4 +231,17 @@ props: {
 }
 ```
 
-### 
+### CSS 宽度分离原则
+
+```css
+.father {
+	width: 100px;
+}
+
+.son {
+	border: 1px solid;
+	padding: 20px;
+	margin: 0 20px;
+}
+```
+
