@@ -285,3 +285,17 @@ props: {
 ```
 
 如果要展开的元素高度比max-height设置的小得多，会有延迟效果，
+
+### 图片等比例缩小
+
+```css
+ .box {
+   padding: 10% 50%;
+   position: relative;
+}
+.box > img {
+   position: absolute;
+   width: 100%; height: 100%;
+   left: 0; top: 0;
+}
+```
