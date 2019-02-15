@@ -15,3 +15,5 @@
    I am using hidden.
 </p>
 ```
+
+### 更新包 npm update
