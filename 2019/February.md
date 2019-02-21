@@ -17,3 +17,12 @@
 ```
 
 ### 更新包 npm update
+
+### disablepictureinpicture
+
+```
+controlslist="nodownload" disablepictureinpicture
+```
+
+关闭 video 下载和画中画
+
