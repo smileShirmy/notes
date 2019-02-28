@@ -26,3 +26,4 @@ controlslist="nodownload" disablepictureinpicture
 
 关闭 video 下载和画中画
 
+### 微信小程序体验版和正式版共用了 storage
